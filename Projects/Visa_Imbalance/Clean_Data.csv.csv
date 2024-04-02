@@ -1,8 +1,8 @@
 data,country,index
 Malaysia: 0.8217549817311728,Malaysia,0.82
 Seychelles: 0.8063183327516146,Seychelles,0.81
-St. Vincent and the Grenadines: 0.8033264176742436,St. Vincent and the Grenadines,0.80
-Singapore: 0.7988764565402908,Singapore,0.80
+St. Vincent and the Grenadines: 0.8033264176742436,St. Vincent and the Grenadines,0.8
+Singapore: 0.7988764565402908,Singapore,0.8
 Barbados: 0.7864454866654799,Barbados,0.79
 Mauritius: 0.7782160079558629,Mauritius,0.78
 Macao (SAR China): 0.7779203044014212,Macao (SAR China),0.78
@@ -18,9 +18,9 @@ Timor-Leste: 0.6480740698407861,Timor-Leste,0.65
 Nicaragua: 0.6472318679647124,Nicaragua,0.65
 St. Kitts and Nevis: 0.6352811106527871,St. Kitts and Nevis,0.64
 Bahamas: 0.6245292344685575,Bahamas,0.62
-Panama: 0.6023575729326321,Panama,0.60
-South Korea: 0.5982152169438124,South Korea,0.60
-Kenya: 0.5958187643906492,Kenya,0.60
+Panama: 0.6023575729326321,Panama,0.6
+South Korea: 0.5982152169438124,South Korea,0.6
+Kenya: 0.5958187643906492,Kenya,0.6
 Ecuador: 0.5947444242971582,Ecuador,0.59
 Grenada: 0.5858449331643022,Grenada,0.59
 Israel: 0.5833630944789018,Israel,0.58
@@ -79,11 +79,11 @@ Romania: 0.5095246653650681,Romania,0.51
 Cyprus: 0.5062895554167107,Cyprus,0.51
 Serbia: 0.5059644256269407,Serbia,0.51
 Haiti: 0.5050686484257774,Haiti,0.51
-Costa Rica: 0.5023406750862942,Costa Rica,0.50
-Argentina: 0.5006287437541393,Argentina,0.50
-Uruguay: 0.4990361079491513,Uruguay,0.50
-Vatican City: 0.4971980313244826,Vatican City,0.50
-Moldova: 0.49670208673103333,Moldova,0.50
+Costa Rica: 0.5023406750862942,Costa Rica,0.5
+Argentina: 0.5006287437541393,Argentina,0.5
+Uruguay: 0.4990361079491513,Uruguay,0.5
+Vatican City: 0.4971980313244826,Vatican City,0.5
+Moldova: 0.49670208673103333,Moldova,0.5
 Burundi: 0.49497474683058323,Burundi,0.49
 United Kingdom: 0.49142029103306717,United Kingdom,0.49
 Djibouti: 0.4898979485566356,Djibouti,0.49
@@ -139,7 +139,7 @@ Benin: 0.33498226035731854,Benin,0.33
 Oman: 0.32979494520436925,Oman,0.33
 Namibia: 0.31888891615274184,Namibia,0.32
 Belarus: 0.31026734082853474,Belarus,0.31
-Canada: 0.295357452664937,Canada,0.30
+Canada: 0.295357452664937,Canada,0.3
 Guyana: 0.27941418925427985,Guyana,0.28
 Tunisia: 0.27439773622801417,Tunisia,0.27
 Nigeria: 0.27277236279499045,Nigeria,0.27
@@ -158,7 +158,7 @@ Uzbekistan: 0.21728579050204447,Uzbekistan,0.22
 Cote d'Ivoire: 0.2154147366637896,Cote d'Ivoire,0.22
 Saudi Arabia: 0.21475019687726374,Saudi Arabia,0.21
 Mongolia: 0.20654609733079113,Mongolia,0.21
-Morocco: 0.19578900207451216,Morocco,0.20
+Morocco: 0.19578900207451216,Morocco,0.2
 Lebanon: 0.19409899176618914,Lebanon,0.19
 Tajikistan: 0.1933206697586479,Tajikistan,0.19
 Australia: 0.1888888888888889,Australia,0.19
@@ -178,8 +178,8 @@ Pakistan: 0.11430011430017145,Pakistan,0.11
 Congo (Rep.): 0.11,Congo (Rep.),0.11
 Central African Republic: 0.10684144485929906,Central African Republic,0.11
 Myanmar: 0.10660035817780522,Myanmar,0.11
-Palestinian Territories: 0.1032370802417528,Palestinian Territories,0.10
-Papua New Guinea: 0.09931270663228416,Papua New Guinea,0.10
+Palestinian Territories: 0.1032370802417528,Palestinian Territories,0.1
+Papua New Guinea: 0.09931270663228416,Papua New Guinea,0.1
 Congo (Dem. Rep.): 0.07378647873726218,Congo (Dem. Rep.),0.07
 Gabon: 0.07364596943186587,Gabon,0.07
 Syria: 0.06804138174397717,Syria,0.07
@@ -195,6 +195,7 @@ Yemen: 0.024618298195866545,Yemen,0.02
 Eritrea: 0.02208630521496931,Eritrea,0.02
 Equatorial Guinea: 0.01889822365046136,Equatorial Guinea,0.02
 Libya: 0.011470786693528088,Libya,0.01
-North Korea: 0.0,North Korea,0.00
-Turkmenistan: 0.0,Turkmenistan,0.00
-Afghanistan: 0.0,Afghanistan,0.00
+North Korea: 0.0,North Korea,0
+Turkmenistan: 0.0,Turkmenistan,0
+Afghanistan: 0.0,Afghanistan,0
+French guiana: 0.5104038089520602,French guiana,0.51

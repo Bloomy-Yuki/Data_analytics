@@ -1,0 +1,90 @@
+---
+title: "IMO_Data"
+author: "sophie"
+date: "2024-04-01"
+output:
+  html_document: default
+  pdf_document: default
+---
+# An R Markdown file to scrape the data from [IMO official website](https://www.imo-official.org/)
+## General Idea
+
+fist we need to get the link to the problems and use some variable date to scrape
+the tables and change it to a data frame, then clean each table individually and lastly
+parsing them all together and saving the result as a .csv file for later cleaning
+and analysis.
+
+```{r}
+#Loading the tidyverse
+library(rvest)
+library(tidyverse)
+```
+
+## Scraping the first table
+
+We need to establish a fist table, as a basis for all our clean ones to get parsed into.
+and as such we start by using the link and some functions to do so
+
+```{r}
+#declaring a url variable
+url <- 'https://www.imo-official.org/year_statistics.aspx?year=1985'
+
+#using pipes to load the table into the data frame
+read_html(url) %>% html_table() %>% data.frame() -> df
+
+#removing extra rows
+df <- df[-c(9:20),]
+
+#adding a name to the first column, since it doesn't have one in the webpage
+colnames(df)[1] = "Problem Number"
+
+#adding the year to the table
+df <- df %>% mutate(Problem_year = 1985)
+
+#our log super table, establishing log as the table where all the other tables will
+#get parsed
+log = df
+log
+```
+
+## Looping through the years
+
+Now all that we have to do is to use a for-loop to repeat the process and append
+every table of every year to the log super-table, this can be achieved as follows:
+
+```{r}
+#creating a list of years to be scraped 
+Dates <- c(1986:2023)
+
+#start of for-loop
+for (year in Dates){
+  
+  #pasting the year as a string to the end of each URL to get the desired webpage
+  url <- paste('https://www.imo-official.org/year_statistics.aspx?year=',toString(year),sep ="")
+  
+  #using the df dummy variable to store the scraped raw data
+  url %>% read_html %>% html_table() %>% data.frame() -> df
+  
+  #removing unwanted rows
+  df <- df[-c(9:20),]
+  
+  #filling the empty column name
+  colnames(df)[1] = "Problem Number"
+  
+  #adding the year as an extra column and to make later cleaning easier
+  df <- df %>% mutate(Problem_year = year)
+  
+  #adding the dummy variable df's table to the log super-table, and preparing to
+  #repeat the loop
+  log <- bind_rows(log, df)
+
+}
+```
+
+## Saving the results as .csv
+
+Analysis and visualizations on [Tableau](https://public.tableau.com/views/InternationalMathematicalOlympiadDataCategoryandDifficulty/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
+
+```{r}
+write.csv(log, "Name_of_your_file.csv")
+```
