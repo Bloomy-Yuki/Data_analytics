@@ -81,10 +81,14 @@ for (year in Dates){
 }
 ```
 
-## Saving the results as .csv
+## Saving the results as .csv 
 
 Analysis and visualizations on [Tableau](https://public.tableau.com/views/InternationalMathematicalOlympiadDataCategoryandDifficulty/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
 
 ```{r}
 write.csv(log, "Name_of_your_file.csv")
+```
+
+```{r}
+htmltools::includeHTML("rrrr.html")
 ```
