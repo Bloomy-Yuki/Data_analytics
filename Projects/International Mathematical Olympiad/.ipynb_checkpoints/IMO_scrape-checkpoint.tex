@@ -1,0 +1,257 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={IMO\_Data},
+  pdfauthor={sophie},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{IMO\_Data}
+\author{sophie}
+\date{2024-04-01}
+
+\begin{document}
+\maketitle
+
+\hypertarget{an-r-markdown-file-to-scrape-the-data-from-imo-official-website}{%
+\section{\texorpdfstring{An R Markdown file to scrape the data from
+\href{https://www.imo-official.org/}{IMO official
+website}}{An R Markdown file to scrape the data from IMO official website}}\label{an-r-markdown-file-to-scrape-the-data-from-imo-official-website}}
+
+\hypertarget{general-idea}{%
+\subsection{General Idea}\label{general-idea}}
+
+fist we need to get the link to the problems and use some variable date
+to scrape the tables and change it to a data frame, then clean each
+table individually and lastly parsing them all together and saving the
+result as a .csv file for later cleaning and analysis.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Loading the tidyverse}
+\FunctionTok{library}\NormalTok{(rvest)}
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+## v dplyr     1.1.4     v readr     2.1.5
+## v forcats   1.0.0     v stringr   1.5.1
+## v ggplot2   3.5.0     v tibble    3.2.1
+## v lubridate 1.9.3     v tidyr     1.3.1
+## v purrr     1.0.2     
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter()         masks stats::filter()
+## x readr::guess_encoding() masks rvest::guess_encoding()
+## x dplyr::lag()            masks stats::lag()
+## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+\end{verbatim}
+
+\hypertarget{scraping-the-first-table}{%
+\subsection{Scraping the first table}\label{scraping-the-first-table}}
+
+We need to establish a fist table, as a basis for all our clean ones to
+get parsed into. and as such we start by using the link and some
+functions to do so
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#declaring a url variable}
+\NormalTok{url }\OtherTok{\textless{}{-}} \StringTok{\textquotesingle{}https://www.imo{-}official.org/year\_statistics.aspx?year=1985\textquotesingle{}}
+
+\CommentTok{\#using pipes to load the table into the data frame}
+\FunctionTok{read\_html}\NormalTok{(url) }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{html\_table}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{data.frame}\NormalTok{() }\OtherTok{{-}\textgreater{}}\NormalTok{ df}
+
+\CommentTok{\#removing extra rows}
+\NormalTok{df }\OtherTok{\textless{}{-}}\NormalTok{ df[}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(}\DecValTok{9}\SpecialCharTok{:}\DecValTok{20}\NormalTok{),]}
+
+\CommentTok{\#adding a name to the first column, since it doesn\textquotesingle{}t have one in the webpage}
+\FunctionTok{colnames}\NormalTok{(df)[}\DecValTok{1}\NormalTok{] }\OtherTok{=} \StringTok{"Problem Number"}
+
+\CommentTok{\#adding the year to the table}
+\NormalTok{df }\OtherTok{\textless{}{-}}\NormalTok{ df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Problem\_year =} \DecValTok{1985}\NormalTok{)}
+
+\CommentTok{\#our log super table, establishing log as the table where all the other tables will}
+\CommentTok{\#get parsed}
+\NormalTok{log }\OtherTok{=}\NormalTok{ df}
+\NormalTok{log}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Problem Number  P1 P2  P3 P4  P5 P6 Problem_year
+## 1  Num( P# = 0 )  32 60 153 61 113 57         1985
+## 2  Num( P# = 1 )  46 27  27 28  21 74         1985
+## 3  Num( P# = 2 )  11  8   8 46  20 19         1985
+## 4  Num( P# = 3 )   9  9   5 18   7 13         1985
+## 5  Num( P# = 4 )   4  3   1 16   7  9         1985
+## 6  Num( P# = 5 )   2  4   0  6   5 10         1985
+## 7  Num( P# = 6 )   2  6   3  2   1  4         1985
+## 8  Num( P# = 7 ) 103 92  12 32  35 23         1985
+\end{verbatim}
+
+\hypertarget{looping-through-the-years}{%
+\subsection{Looping through the years}\label{looping-through-the-years}}
+
+Now all that we have to do is to use a for-loop to repeat the process
+and append every table of every year to the log super-table, this can be
+achieved as follows:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#creating a list of years to be scraped }
+\NormalTok{Dates }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\DecValTok{1986}\SpecialCharTok{:}\DecValTok{2023}\NormalTok{)}
+
+\CommentTok{\#start of for{-}loop}
+\ControlFlowTok{for}\NormalTok{ (year }\ControlFlowTok{in}\NormalTok{ Dates)\{}
+  
+  \CommentTok{\#pasting the year as a string to the end of each URL to get the desired webpage}
+\NormalTok{  url }\OtherTok{\textless{}{-}} \FunctionTok{paste}\NormalTok{(}\StringTok{\textquotesingle{}https://www.imo{-}official.org/year\_statistics.aspx?year=\textquotesingle{}}\NormalTok{,}\FunctionTok{toString}\NormalTok{(year),}\AttributeTok{sep =}\StringTok{""}\NormalTok{)}
+  
+  \CommentTok{\#using the df dummy variable to store the scraped raw data}
+\NormalTok{  url }\SpecialCharTok{\%\textgreater{}\%}\NormalTok{ read\_html }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{html\_table}\NormalTok{() }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{data.frame}\NormalTok{() }\OtherTok{{-}\textgreater{}}\NormalTok{ df}
+  
+  \CommentTok{\#removing unwanted rows}
+\NormalTok{  df }\OtherTok{\textless{}{-}}\NormalTok{ df[}\SpecialCharTok{{-}}\FunctionTok{c}\NormalTok{(}\DecValTok{9}\SpecialCharTok{:}\DecValTok{20}\NormalTok{),]}
+  
+  \CommentTok{\#filling the empty column name}
+  \FunctionTok{colnames}\NormalTok{(df)[}\DecValTok{1}\NormalTok{] }\OtherTok{=} \StringTok{"Problem Number"}
+  
+  \CommentTok{\#adding the year as an extra column and to make later cleaning easier}
+\NormalTok{  df }\OtherTok{\textless{}{-}}\NormalTok{ df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{mutate}\NormalTok{(}\AttributeTok{Problem\_year =}\NormalTok{ year)}
+  
+  \CommentTok{\#adding the dummy variable df\textquotesingle{}s table to the log super{-}table, and preparing to}
+  \CommentTok{\#repeat the loop}
+\NormalTok{  log }\OtherTok{\textless{}{-}} \FunctionTok{bind\_rows}\NormalTok{(log, df)}
+
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{saving-the-results-as-.csv}{%
+\subsection{Saving the results as
+.csv}\label{saving-the-results-as-.csv}}
+
+Analysis and visualizations on
+\href{https://public.tableau.com/views/InternationalMathematicalOlympiadDataCategoryandDifficulty/Dashboard1?:language=en-GB\&:sid=\&:display_count=n\&:origin=viz_share_link}{Tableau}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{write.csv}\NormalTok{(log, }\StringTok{"Name\_of\_your\_file.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{htmltools}\SpecialCharTok{::}\FunctionTok{includeHTML}\NormalTok{(}\StringTok{"rrrr.html"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: `includeHTML()` was provided a `path` that appears to be a complete HTML document.
+## x Path: rrrr.html
+## i Use `tags$iframe()` to include an HTML document. You can either ensure `path` is accessible in your app or document (see e.g. `shiny::addResourcePath()`) and pass the relative path to the `src` argument. Or you can read the contents of `path` and pass the contents to `srcdoc`.
+\end{verbatim}
+
+\end{document}
