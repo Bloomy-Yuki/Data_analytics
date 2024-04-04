@@ -5,7 +5,7 @@ furthermore, this read_me file will contain an overview of all the projects and 
 
 the format of this repository is as follows:
 
-README.md
+    README.md
 
     ---> Projects
         ---> Project folder 
@@ -19,8 +19,8 @@ README.md
 this project revolves around an analysis of a scraped dataset from the official I.M.O website and finally adding them
 to a tableau dashboard showing the relationship between problem category, difficulty, and year.
 
-- [Link to markdown file](Projects/International Mathematical Olympiad/IMO.md)
-- [link to Jupyter notebook file](Projects/International Mathematical Olympiad/IMO.ipynb)
+- [Link to markdown file](Projects/International-Mathematical-Olympiad/IMO.md)
+- [link to Jupyter notebook file](Projects/International-Mathematical-Olympiad/IMO.ipynb)
 
 ## 2. William Lowell Putnam Mathematical Competition
 
