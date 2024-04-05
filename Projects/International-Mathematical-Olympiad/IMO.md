@@ -29,6 +29,8 @@ problem type.
 4. Not all problem have a category, thus limiting our data sets to the problems that do so
 
 
+Analysis and visualizations on [Tableau](https://public.tableau.com/views/InternationalMathematicalOlympiadDataCategoryandDifficulty/Dashboard1?:language=en-GB&:sid=&:display_count=n&:origin=viz_share_link)
+
 
 ```python
 #Python code
@@ -58,8 +60,3 @@ years, with stark contrast to geometry being the most frequent problem category 
 
 In conclusion, based on the data, a strong recommendation to focus on combinatorics-related problems in training is to be presented. the dashboard
 can also provide training problems with their associated difficulty.
-
-
-```python
-
-```
