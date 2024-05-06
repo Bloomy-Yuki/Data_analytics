@@ -27,7 +27,7 @@ to a tableau dashboard showing the relationship between problem category, diffic
 this project aims to discover the relation of participants attempting to solve a problem and the fraction of those who
 succeed to do so fully, then using them for a visual using tableau.
 
-- [Link to markdown file](/Projects/William-Lowell-Putnam-Mathematical-Competition/Putnam.md)
+- [Link to markdown file](/Projects/William-Lowell-Putnam-Mathematical-Competition/William-Lowell-Putnam-Mathematical-Competition.md)
 - [link to Jupyter notebook file](/Projects/William-Lowell-Putnam-Mathematical-Competition/Putnam.ipynb)
 
 ## 3. Stock Backtest
@@ -35,5 +35,13 @@ succeed to do so fully, then using them for a visual using tableau.
 this project uses a .csv file of historical stock prices to calculate the yield using various variables and strategy of investment
 using an indicator.
 
-- [Link to markdown file](/Projects/Stock_Backtest/Stock_backtest.md)
-- [link to Jupyter notebook file](/Projects/Stock_Backtest/Stock_backtest.ipynb)
+- [Link to markdown file](/Projects/Stock_Backtest/Stock.md)
+- [link to Jupyter notebook file](/Projects/Stock_Backtest/Stock.ipynb)
+
+## 4. Used Cars in Germany
+
+
+- [Link to markdown file](/Projects/Stock_Backtest/cars.md)
+- [link to Jupyter notebook file](/Projects/Stock_Backtest/Used_cars.ipynb)
+
+
