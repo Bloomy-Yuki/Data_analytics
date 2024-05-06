@@ -43,7 +43,7 @@ using an indicator.
 This project aims to provide an overview of used cars market in germany and would be helpful in aiding someone who would want
 to get into the market and get a feel for prices and other factors that influence the price
 
-- [Link to markdown file](/Projects/Stock_Backtest/cars.md)
-- [link to Jupyter notebook file](/Projects/Stock_Backtest/Used_cars.ipynb)
+- [Link to markdown file](/Projects/Used_cars/cars.md)
+- [link to Jupyter notebook file](/Projects/Used_cars/Used_cars.ipynb)
 
 
